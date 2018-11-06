@@ -8,13 +8,14 @@ import { AppfooterComponent } from './components/appfooter/appfooter.component';
 import { AppmenuComponent } from './components/appmenu/appmenu.component';
 import { AppsettingsComponent } from './components/appsettings/appsettings.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TreeviewModule as tree } from './treeview/treeview/treeview.module';
 import { TreeViewModule } from '@progress/kendo-angular-treeview';
 import { InputsModule } from '@progress/kendo-angular-inputs';
 import { ChartComponent } from './components/chart/chart.component';
 import { TestmanagerComponent } from './components/testmanager/testmanager.component';
 import { ExecutionmanagerModule } from './components/executionmanager/executionmanager.module';
 import { ChartModule } from './components/chart/chart.module';
+import { TestmanagerModule } from './components/testmanager/testmanager.module';
+
 
 
 
@@ -24,18 +25,17 @@ import { ChartModule } from './components/chart/chart.module';
     AppheaderComponent,
     AppfooterComponent,
     AppmenuComponent,
-    AppsettingsComponent,
-    TestmanagerComponent,
+    AppsettingsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    tree,
     TreeViewModule,
     BrowserAnimationsModule,
     InputsModule,
     ExecutionmanagerModule,
-    ChartModule
+    ChartModule,
+    TestmanagerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

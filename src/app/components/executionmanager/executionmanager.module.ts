@@ -19,9 +19,7 @@ import { Http, HttpModule } from '@angular/http';
     HttpModule
   ],
   declarations: [ExecutionmanagerComponent],
-  exports: [
-    ExecutionmanagerComponent
-  ],
+  exports: [ ExecutionmanagerComponent ],
   providers: [ ExecutionManagerService ]
 })
 export class ExecutionmanagerModule { }

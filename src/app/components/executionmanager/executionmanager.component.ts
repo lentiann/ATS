@@ -11,16 +11,26 @@ import { TestFolder } from 'src/app/shared/interfaces/test-folder';
   styleUrls: ['./executionmanager.component.css']
 })
 export class ExecutionmanagerComponent implements OnInit {
-  public executionFolders: Observable<ExecutionFolder[]>;
-  // public executionFolders: ExecutionFolder[];
-  varg: any;
+  
+  private executionFolders: ExecutionFolder[];
+
   constructor(private executionService: ExecutionManagerService) { }
 
   ngOnInit(): void {
     this.executionService.getExecutionFolders()
-    .subscribe(data => this.varg = data,(err: any)=> console.log(err),() => console.log(this.varg));
+      .subscribe(data => this.executionFolders = data, (err: any) => console.log(err), () => console.log(this.executionFolders));
     ;
-    
+  }
+    public  onNodeClick(event: any): void {
+    console.log(event.item.dataItem);
+  }
+  //onClick folder
+  public onClickFolder() {
+    return;
+  }
+  
+  
+
 
     // this.executionService.getExecutionFolders().subscribe(resp => 
     //   {
@@ -29,6 +39,6 @@ export class ExecutionmanagerComponent implements OnInit {
     //         noderef: item.noderef, subProjectId: item.subProjectId, parentId: item.parentId, name: item.name, description: item.description
     //       })
     //   })
-  }
+  
 
 }

@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\components\\testmanager",
+    "\\src\\app\\core",
+    "\\src\\app\\core\\services",
+    "\\src\\app\\treeview\\treeview",
+    "\\src\\environments"
+  ],
+  "SelectedNode": "\\src\\app\\components\\testmanager\\testmanager.component.ts",
+  "PreviewInSolutionExplorer": false
+}

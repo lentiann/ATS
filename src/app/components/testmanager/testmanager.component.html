@@ -1,3 +1,9 @@
-<p>
-  testmanager works!
-</p>
+<kendo-treeview
+ [nodes]="testFolders | async"
+ [textField]="['name', 'name']"
+ kendoTreeViewExpandable
+
+ [hasChildren]="hasChildren"
+ [children]="fetchChildren"
+>
+</kendo-treeview>
